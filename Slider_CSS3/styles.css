@@ -16,7 +16,7 @@ body{
 #main_menu [class^=button_slider]:hover  img{
 	box-shadow: 0 0 0 1px #0f0;
 }
-#main_menu input{
+#main_menu input{            /*Ховаємо всі наші інпути*/
 	display: none;
 }
 #main_menu input:checked + label img{
@@ -26,23 +26,25 @@ body{
 	margin: 5px 5px;
 	-webkit-transition: -webkit-trasform 0.5s ease;
 	-o-transition: -o-trasform 1s ease;
-	transition: transform 1s ease;
+	transition: transform 1s linear;        /*задаємо відстежувати параметр transform затримка перед виконанням 1с, виконання плавно*/
 }
 #main_menu label img:hover{
 	-webkit-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
-	transform: rotateY(180deg);
+	transform: rotateY(180deg);        /*Задаємо трансформацію при наведенні по осі У на 180*/
 }
 #separator{
 	height: 10px;
 	background-color: white;
 }
-.slider{
+/*Задаємо background для основного вікна, використовуємо картинку, яка через label зв'язана з першим input*/
+.slider{  
 	background: url(i/1big.jpg) no-repeat white;
 	height: 417px;
 	margin: 0px auto;
 
 }
+        /*Змінюємо основний background в залежності від відміченого інпута*/
 #slider2:checked  ~ .slider {
 	background-image: url(i/2big.jpg);
 }
