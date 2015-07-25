@@ -1,5 +1,5 @@
 body{
-    
+    background-color: green;
 }
 #main_menu{
 	background-color: #000;
@@ -30,8 +30,8 @@ body{
 }
 #main_menu label img:hover{
 	-webkit-transform: rotateY(180deg);
-	-o-transform: rotateY(90deg);
-	transform: rotateY(90deg);        /*Задаємо трансформацію при наведенні по осі У на 180*/
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);        /*Задаємо трансформацію при наведенні по осі У на 180*/
 }
 #separator{
 	height: 10px;
