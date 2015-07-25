@@ -1,0 +1,60 @@
+body{
+
+}
+#main_menu{
+	background-color: #000;
+	margin: 0 auto;
+	padding-top: 5px;
+	width: 570px;
+}
+#main_menu .button_slider1{
+	margin-left: 20px;
+}
+#main_menu .button_slider6{
+	margin-right: 20px;
+}
+#main_menu [class^=button_slider]:hover  img{
+	box-shadow: 0 0 0 1px #0f0;
+}
+#main_menu input{
+	display: none;
+}
+#main_menu input:checked + label img{
+	box-shadow: 0 0 0 2px #fff;
+}
+#main_menu label img{
+	margin: 5px 5px;
+	-webkit-transition: -webkit-trasform 0.5s ease;
+	-o-transition: -o-trasform 1s ease;
+	transition: transform 1s ease;
+}
+#main_menu label img:hover{
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+#separator{
+	height: 10px;
+	background-color: white;
+}
+.slider{
+	background: url(i/1big.jpg) no-repeat white;
+	height: 417px;
+	margin: 0px auto;
+
+}
+#slider2:checked  ~ .slider {
+	background-image: url(i/2big.jpg);
+}
+#slider3:checked  ~ .slider {
+	background-image: url(i/3big.jpg);
+}
+#slider4:checked  ~ .slider {
+	background-image: url(i/4big.jpg);
+}
+#slider5:checked  ~ .slider {
+	background-image: url(i/5big.jpg);
+}
+#slider6:checked  ~ .slider {
+	background-image: url(i/6big.jpg);
+}
